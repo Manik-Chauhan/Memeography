@@ -40,12 +40,12 @@ router.post('/signup',(req,res)=>{
     
             user.save()
             .then(user=>{
-                // transporter.sendMail({
-                //     to:user.email,
-                //     from:"no-reply@insta.com",
-                //     subject:"signup success",
-                //     html:"<h1>welcome to instagram</h1>"
-                // })
+                 transporter.sendMail({
+                     to:user.email,
+                    from:"rockonmanik@gmail.com",
+                    subject:"signup success",
+                   html:"<h1>welcome to Memography</h1>"
+                 })
                 res.json({message:"saved successfully"})
             })
             .catch(err=>{
@@ -105,7 +105,7 @@ router.post('/reset-password',(req,res)=>{
              user.save().then((result)=>{
                  transporter.sendMail({
                      to:user.email,
-                     from:"no-replay@insta.com",
+                     from:"rockonmanik@gmail.com",
                      subject:"password reset",
                      html:`
                      <p>You requested for password reset</p>
