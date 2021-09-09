@@ -15,9 +15,13 @@ const NavBar = ()=>{
        if(state){
            return [
             <li key="1"><i  data-target="modal1" className="large material-icons modal-trigger" style={{color:"black"}}>search</i></li>,
-            <li key="2"><Link to="/profile">Profile</Link></li>,
-            <li key="3"><Link to="/create">Create Post</Link></li>,
-            <li key="4"><Link to="/myfollowingpost">My following Posts</Link></li>,
+            <li key="2"><Link to="/profile"className="hide-on-med-and-down">Profile</Link></li>,
+            <li key="2"><Link to="/profile"className="hide-on-large-only"><i class="material-icons">home</i></Link></li>,
+            
+            <li key="3"><Link to="/create"className="hide-on-med-and-down">Create Post</Link></li>,
+            <li key="3"><Link to="/create"className="hide-on-large-only"><i class="material-icons">post_add</i></Link></li>,
+            <li key="4"><Link to="/myfollowingpost"className="hide-on-med-and-down">My following Posts</Link></li>,
+            <li key="4"><Link to="/myfollowingpost"className="hide-on-large-only"><i class="material-icons">dynamic_feed</i></Link></li>,
             <li  key="5">
              <button className="btn #c62828 red darken-3"
             onClick={()=>{
@@ -29,8 +33,6 @@ const NavBar = ()=>{
                 Logout
             </button>
             </li>
-         
-            
            ]
        }else{
          return [
@@ -90,7 +92,6 @@ const NavBar = ()=>{
           </div>
         </div>
       </nav>
-      
     )
 }
 
