@@ -18,7 +18,7 @@ A social media app build using MERN STACK with all the features of social media 
 ## Installation
 
 Getting Started with Create React App
-This project was bootstrapped with Create React App. You can view/use the app at https://yolo-news.netlify.app
+This project was bootstrapped with Create React App. You can view/use the app at _______
 
 Available Scripts
 In the project directory, you can run:

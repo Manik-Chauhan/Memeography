@@ -60,7 +60,8 @@ const NavBar = ()=>{
     return(
         <nav>
         <div className="nav-wrapper white">
-          <Link to={state?"/":"/signin"} className="brand-logo left">Instagram</Link>
+          <Link to={state?"/":"/signin"} className="brand-logo left hide-on-med-and-down">Memeography</Link>
+          <Link to={state?"/":"/signin"} className="brand-logo left hide-on-large-only"><i class="material-icons">center_focus_strong</i></Link>
           <ul id="nav-mobile" className="right">
              {renderList()}
   
@@ -89,6 +90,7 @@ const NavBar = ()=>{
           </div>
         </div>
       </nav>
+      
     )
 }
 
