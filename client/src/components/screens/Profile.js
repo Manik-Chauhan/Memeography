@@ -77,11 +77,11 @@ const Profile  = ()=>{
                </div>
                <div>
                    <h4>{state?state.name:"loading"}</h4>
-                   <h5>{state?state.email:"loading"}</h5>
+                   <h6>{state?state.email:"loading"}</h6>
                    <div style={{display:"flex",justifyContent:"space-between",width:"108%"}}>
-                       <h6>{mypics.length} posts</h6>
-                       <h6>{state?state.followers.length:"0"} followers</h6>
-                       <h6>{state?state.following.length:"0"} following</h6>
+                       <h7>{mypics.length} posts</h7>
+                       <h7>{state?state.followers.length:"0"} followers</h7>
+                       <h7>{state?state.following.length:"0"} following</h7>
                    </div>
 
                </div>
